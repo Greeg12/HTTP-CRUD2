@@ -244,6 +244,7 @@
         const numeroJogadores = document.getElementById('numeroJogadores').value;
         const nomeCompeticao = document.getElementById('nomeCompeticao').value;
         const cnpj = document.getElementById('cnpjTime').value;
+        window.location.reload();
         fetch(`times`, {
           method: "POST",
           headers: {

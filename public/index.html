@@ -321,12 +321,12 @@
       function deletarDados() {
         const cnpj = document.getElementById('cnpj').value;
       
-        fetch('http://localhost:3000/times')
+        fetch('times')
         .then(response => response.json())
         .then(data => {
             data.forEach(objeto => {
                 if(objeto.cnpj === cnpj){
-                    fetch(`http://localhost:3000/times/${objeto.id}`, {
+                    fetch(`times/${objeto.id}`, {
                         method: 'DELETE'
                     })  
                 }

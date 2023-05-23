@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <section class="paginaPrincipal">
+      <div class="card card-1">
+        <div class="card-header">
+          <img src="img/fundo1.webp" class="card-img" />
+        </div>
+
+        <div class="card-body">
+          <h3 class="card-local">Nossas Competições</h3>
+          <p class="card-texto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+            libero saepe quo excepturi quisquam, dolores doloremque cupiditate
+            adipisci incidunt mollitia.
+          </p>
+        </div>
+
+        <div class="card-footer">
+          <li><a href="historia.html">Ver Mais</a></li>
+        </div>
+
+        <div>
+          <button onclick="openModalCad()" class="botaoCard">
+            INSCRIÇÃO DO TIME
+          </button>
+        </div>
+      </div>
+
+      <header>
+        <a href="#"><img src="img/logo.png" alt="" class="logo" /></a>
+        <nav class="navegation">
+          <ul>
+            <li><a href="historia.html">CAMPEONATOS</a></li>
+            <li><a href="#">EM BREVE</a></li>
+            <li><a href="#">EM BREVE</a></li>
+            <li><a href="historia.html">HISTÓRIA</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="text">
+          <h2>SEJA BEM-VINDO <br /><span>EventLab</span></h2>
+
+          <a href="#"
+            ><button class="botaoConsulte" onclick="openModal()">
+              CONSULTE TIME
+            </button></a
+          >
+
+          <a href="#"
+            ><button class="botaoConsulte" onclick="openModalCadDois()">
+              ATUALIZE DADOS
+            </button></a
+          >
+        </div>
+      </div>
+      <ul class="icons">
+        <li>
+          <a href="#"><img src="img/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/instagram.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="modal-container">
+      <div class="modal">
+        <div class="wrapper fadeInDown">
+          <div class="content-login">
+            <h2 class="active">- Colsute ou Cancele a Inscrição -</h2>
+            <h2 class="active">Pesquise o CNPJ</h2>
+            <form class="box-login" method="post" action="#">
+              <input
+                type="text"
+                class="campo"
+                id="cnpj"
+                placeholder="Pesquise CNPJ"
+              />
+
+              <input
+                type="button"
+                class="botao"
+                value="DELETAR"
+                onclick="deletarDados()"
+              />
+            </form>
+            <div class="box-lembrar-senha">
+              <a class="link" href="index.html">Volte ao Ínicio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-containerCad">
+      <div class="modal">
+        <div class="formularioCad">
+          <section class="topoCad">
+            <h2 class="tituloCad">Nova conta</h2>
+          </section>
+
+          <form id="form" class="formCad">
+            <div class="form-cadastro">
+              <label for="username">Nome do Time</label>
+              <input
+                type="text"
+                id="nomeTime"
+                placeholder="Digite o nome do time..."
+              />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <div class="form-cadastro">
+              <label for="username">Nome do Treinador</label>
+              <input
+                type="text"
+                id="nomeTreinador"
+                placeholder="Digite o nome do usuario..."
+              />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <div class="form-cadastro">
+              <label for="email">Número de jogadores</label>
+              <input
+                type="number"
+                id="numeroJogadores"
+                placeholder="Digite seu email..."
+              />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <div class="form-cadastro">
+              <label for="username">Competição</label>
+              <input
+                type="text"
+                id="nomeCompeticao"
+                placeholder="Digite a competição..."
+              />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <div class="form-cadastro">
+              <label for="email">CNPJ - TIME</label>
+              <input type="text" id="cnpjTime" placeholder="00000000/000000" />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <button type="submit" onclick="enviarDados()">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-containerCadDois">
+      <div class="modal">
+        <div class="formularioCad">
+          <section class="topoCad">
+            <h2 class="tituloCad">BUSCA / ATUALIZE</h2>
+          </section>
+
+          <div class="form-cadastro2">
+            <label for="email" class="tituloAtualize">CNPJ - TIME</label>
+            <input
+              type="text"
+              id="cnpjAtualizar"
+              placeholder="00000000/000000"
+            />
+          </div>
+
+          <form id="form" class="formCad">
+            <div class="form-cadastro">
+              <label>ID</label>
+              <input type="text" id="id" placeholder="" disabled />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <div class="form-cadastro">
+              <label for="username">Nome do Time</label>
+              <input
+                type="text"
+                id="nomeTimeAtualizar"
+                placeholder="Digite o nome do time..."
+              />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <div class="form-cadastro">
+              <label for="username">Nome do Treinador</label>
+              <input
+                type="text"
+                id="nomeTreinadorAtualizar"
+                placeholder="Digite o nome do usuario..."
+              />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <div class="form-cadastro">
+              <label for="email">Número de jogadores</label>
+              <input
+                type="number"
+                id="numeroJogadoresAtualizar"
+                placeholder="Digite seu email..."
+              />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <div class="form-cadastro">
+              <label for="username">Competição</label>
+              <input
+                type="text"
+                id="nomeCompeticaoAtualizar"
+                placeholder="Digite a competição..."
+              />
+              <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+            <button type="submit" onclick="buscarDados()">Buscar</button>
+            <button type="submit" onclick="atualizarDados()">
+              Atulizar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //POST
+      function enviarDados() {
+        const nomeTime = document.getElementById('nomeTime').value;
+        const nomeTreinador = document.getElementById('nomeTreinador').value;
+        const numeroJogadores = document.getElementById('numeroJogadores').value;
+        const nomeCompeticao = document.getElementById('nomeCompeticao').value;
+        const cnpj = document.getElementById('cnpjTime').value;
+        fetch(`times`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({nomeTime: nomeTime, nomeTreinador: nomeTreinador, numeroJogadores: numeroJogadores, competicao: nomeCompeticao, cnpj: cnpj}),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // atualiza os valores na tela
+            //document.getElementById('mostrarNome').textContent = data.nome;
+            //document.getElementById('mostrarIdade').textContent = data.idade;
+            //document.getElementById('mostrarCpf').textContent = data.cpf;
+
+            // limpa os inputs do formulário
+            document.getElementById("nomeTime").value = "";
+            document.getElementById("nomeTreinador").value = "";
+            document.getElementById("numeroJogadores").value = "";
+            document.getElementById("nomeCompeticao").value = "";
+            document.getElementById("cnpjTime").value = "";
+          });
+      }
+
+      //GET
+      function buscarDados() {
+        const cnpj = document.getElementById('cnpjAtualizar').value;
+        fetch(`times`, {
+            method: 'GET'
+        })
+            .then(response => response.json())
+            .then(data => {
+                const timeEncontrado = data.find(nomeTime => nomeTime.cnpj === cnpj)
+                if(timeEncontrado) {
+                    document.getElementById('id').value = timeEncontrado.id;
+                    document.getElementById('nomeTimeAtualizar').value = timeEncontrado.nomeTime;
+                    document.getElementById('nomeTreinadorAtualizar').value = timeEncontrado.nomeTreinador;
+                    document.getElementById('numeroJogadoresAtualizar').value = timeEncontrado.numeroJogadores;
+                    document.getElementById('nomeCompeticaoAtualizar').value = timeEncontrado.competicao;
+                    document.getElementById('cnpjAtualizar').value = timeEncontrado.cnpj;
+                } else {
+                    alert('Time não Encotrado!');
+                }
+            })
+      }
+
+      //PUT
+      function atualizarDados() {
+        const id = document.getElementById('id').value;
+        const nomeTime = document.getElementById('nomeTimeAtualizar').value;
+        const nomeTreinador = document.getElementById('nomeTreinadorAtualizar').value;
+        const numeroJogadores = document.getElementById('numeroJogadoresAtualizar').value;
+        const nomeCompeticao = document.getElementById('nomeCompeticaoAtualizar').value;
+        const cnpj = document.getElementById('cnpjAtualizar').value;
+
+        fetch(`times/${id}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({nomeTime: nomeTime, nomeTreinador: nomeTreinador, numeroJogadores: numeroJogadores, competicao: nomeCompeticao, cnpj: cnpj}),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // limpa os inputs do formulário
+            document.getElementById("id").value = "";
+            document.getElementById("nomeTimeAtualizar").value = "";
+            document.getElementById("nomeTreinadorAtualizar").value = "";
+            document.getElementById("numeroJogadoresAtualizar").value = "";
+            document.getElementById("nomeCompeticaoAtualizar").value = "";
+            document.getElementById("cnpjAtualizar").value = "";
+          });
+      }
+
+      //DELETE
+      function deletarDados() {
+        const cnpj = document.getElementById('cnpj').value;
+      
+        fetch('http://localhost:3000/times')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(objeto => {
+                if(objeto.cnpj === cnpj){
+                    fetch(`http://localhost:3000/times/${objeto.id}`, {
+                        method: 'DELETE'
+                    })  
+                }
+            })
+        })
+      }
+
+      //Ação dos Popup
+
+      //Popup da Busca/Delete
+
+      const modal = document.querySelector(".modal-container");
+
+      function openModal() {
+        modal.classList.add("active");
+      }
+
+      function closeModal() {
+        modal.classList.remove("active");
+      }
+
+      //Popup do Cadastro do Times
+
+      const modalCad = document.querySelector(".modal-containerCad");
+
+      function openModalCad() {
+        modalCad.classList.add("active");
+      }
+
+      function closeModalCad() {
+        modalCad.classList.remove("active");
+      }
+
+      //Popup Busca/Atualize
+
+      const modalCadDois = document.querySelector(".modal-containerCadDois");
+
+      function openModalCadDois() {
+        modalCadDois.classList.add("active");
+      }
+
+      function closeModalCadDois() {
+        modalCadDois.classList.remove("active");
+      }
+
+      //Popup Login/Cadastro
+
+      const modalLogar = document.querySelector(".modal-containerLogar");
+
+      function openModalLogar() {
+        modalLogar.classList.add("active");
+      }
+
+      function closeModalLogar() {
+        modalLogar.classList.remove("active");
+      }
+    </script>
+
+    <input type="button" onclick="aperte()" value="Aperte" />
+
+    <script src="script.js"></script>
+  </body>
+</html>

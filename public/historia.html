@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História Campeonatos</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="carrega()">
+  <nav class="containerHistoria">
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+    </div>
+
+    <div class="menu-btn">
+      <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+    </div>
+
+    <ul>
+      <li> <a href="index.html" class="active"> Home </a> </li>
+      <li> <a href="#">CAMPEONATOS</a> </li>
+      <li> <a href="#">HISTÓRIA</a></li>
+      <li> <a href="#">EM BREVE</a></li>
+      <li> <a href="#">EM BREVE</a></li>
+    </ul>
+  </nav>
+
+  <div class="contentC">
+
+    <div class="slides">
+
+      <input type="radio" name="slide" id="slide1" checked>
+      <input type="radio" name="slide" id="slide2">
+      <input type="radio" name="slide" id="slide3">
+      <input type="radio" name="slide" id="slide4">
+      <input type="radio" name="slide" id="slide5">
+
+      <div class="slide s1">
+        <img src="img/1.png" alt="Fifa 23">
+      </div>
+
+      <div class="slide">
+        <img src="img/2.png" alt="God of War - RAGNAROK">
+      </div>
+
+      <div class="slide">
+        <img src="img/3.png" alt="Mortal Combat">
+      </div>
+
+      <div class="slide">
+        <img src="img/4.png" alt="Valorant">
+      </div>
+
+      <div class="slide">
+        <img src="img/5.png" alt="Fall Guys">
+      </div>
+    </div>
+
+    <div class="navigationC">
+      <label class="barC" for="slide1"></label>
+      <label class="barC" for="slide2"></label>
+      <label class="barC" for="slide3"></label>
+      <label class="barC" for="slide4"></label>
+      <label class="barC" for="slide5"></label>
+    </div>
+  </div>
+
+  <section class="sectionTitulo">
+    <h1 titulo="">
+        Times
+    </h1><br>
+  </section>
+
+  <section class="sectionTitulo">
+    <h1 titulo="">
+        Inscritos
+    </h1>
+  </section>
+
+  <main class="cardS">
+    <section class="carD shop">
+      <div class="icon">
+        <img src="img/Champ.png">
+      </div>
+      <h3>CHAMPIONS</h3>
+      <p id="timesChamp"></p>
+      <button>Atualize</button>
+    </section>
+
+    <section class="carD shop">
+      <div class="icon">
+        <img src="img/Brasi.png">
+      </div>
+      <h3>BRASILEIÃO</h3>
+      <p id="timesBrasi"></p>
+      <button>Atualize</button>
+    </section>
+
+    <section class="carD shop">
+      <div class="icon">
+        <img src="img/Liberta.png">
+      </div>
+      <h3>LIBERTADORES</h3>
+      <p id="timesLiberta"></p>
+      <button>Atualize</button>
+    </section>
+
+    <section class="carD shop">
+      <div class="icon">
+        <img src="img/Copa.png">
+      </div>
+      <h3>COPA DO BRASIL</h3>
+      <p id="timesCopa"></p>
+      <button>Atualize</button>
+    </section>
+
+    <section class="carD shop">
+      <div class="icon">
+        <img src="img/Mundi.png">
+      </div>
+      <h3>MUNDIAL</h3>
+      <p id="timesMundi"></p>
+      <button>Atualize</button>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

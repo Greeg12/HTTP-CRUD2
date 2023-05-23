@@ -1,0 +1,77 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Maria",
+      "senha": 20
+    },
+    {
+      "nome": "Neymar",
+      "senha": "30",
+      "id": 2
+    },
+    {
+      "nome": "Greg",
+      "senha": "123",
+      "id": 3
+    },
+    {
+      "nomeTime": "aaa",
+      "nomeTreinador": "aaaa",
+      "numeroJogadores": "11",
+      "competicao": "aaaa",
+      "cnpj": "1111",
+      "id": 4
+    },
+    {
+      "nomeTime": "aaaa",
+      "nomeTreinador": "aaaa",
+      "numeroJogadores": "11",
+      "competicao": "aaaa",
+      "cnpj": "222",
+      "id": 5
+    }
+  ],
+  "times": [
+    {
+      "nomeTime": "Gregorio",
+      "nomeTreinador": 1,
+      "numeroJogadores": 1,
+      "competicao": "GregorioCompete",
+      "cnpj": "123456789-00",
+      "id": 1
+    },
+    {
+      "nomeTime": "Flamengo",
+      "nomeTreinador": "Gregorio",
+      "numeroJogadores": "24",
+      "competicao": "Brasileirao",
+      "cnpj": "12345678902",
+      "id": 3
+    },
+    {
+      "nomeTime": "Vasco",
+      "nomeTreinador": "Doidin",
+      "numeroJogadores": "20",
+      "competicao": "Copa do Brasil",
+      "cnpj": "2312312413211",
+      "id": 4
+    },
+    {
+      "nomeTime": "Real Madrid",
+      "nomeTreinador": "Carlo Ancelotti",
+      "numeroJogadores": "29",
+      "competicao": "Mundial",
+      "cnpj": "2371827381",
+      "id": 5
+    },
+    {
+      "nomeTime": "Man City",
+      "nomeTreinador": "Guardiola",
+      "numeroJogadores": "24",
+      "competicao": "Mundial",
+      "cnpj": "231312412141",
+      "id": 6
+    }
+  ]
+}

@@ -328,7 +328,9 @@
                 if(objeto.cnpj === cnpj){
                     fetch(`times/${objeto.id}`, {
                         method: 'DELETE'
-                    })  
+                    })
+                  alert('Conta deletada!');
+                  window.location.reload();
                 }
             })
         })

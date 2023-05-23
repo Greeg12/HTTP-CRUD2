@@ -252,6 +252,7 @@
           body: JSON.stringify({nomeTime: nomeTime, nomeTreinador: nomeTreinador, numeroJogadores: numeroJogadores, competicao: nomeCompeticao, cnpj: cnpj}),
         })
           .then((response) => response.json())
+            window.location.reload();
           .then((data) => {
             // atualiza os valores na tela
             //document.getElementById('mostrarNome').textContent = data.nome;
